@@ -2,17 +2,10 @@
 
 using namespace std;
 
-int add(int x, int y) {
-    return x + y;
-}
-
-
-int sub(int x, int y) {
-    return x - y;
-}
+int add(int x, int y);
+int sub(int x, int y);
 
 int main() {
-
     cout << "Enter your query?" << endl;
 
     int x, y, ans;
@@ -29,4 +22,12 @@ int main() {
 
     cout << ans << endl;
     return 0;
+}
+
+int add(int x, int y) {
+    return x + y;
+}
+
+int sub(int x, int y) {
+    return x - y;
 }
